@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Join · EmpowerHer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-nav">
+        <div class="logo"><img src="images/Logo.png" alt="EmpowerHer Logo"></div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <button class="hamburger"><span></span><span></span><span></span></button>
+    </div>
+
+    <section id="contact" class="page-section">
+        <div class="section-title">
+            <h2>Join Us & Get in Touch</h2>
+            <p>Whether you want to volunteer, become a member, or partner with EmpowerHer we'd love to hear from you.</p>
+        </div>
+
+        <!-- Slack Banner  -->
+        <div class="slack-banner" style="display: flex; align-items: center; justify-content: space-between; background: #4A154B; padding: 24px 32px; border-radius: 24px; margin-bottom: 48px; max-width: 900px; margin-left: auto; margin-right: auto;">
+            <div class="slack-banner-content" style="display: flex; align-items: center; gap: 20px;">
+                <div class="slack-icon"><i class="fab fa-slack" style="font-size: 2.5rem; color: white;"></i></div>
+                <div><h3 style="color: white; margin-bottom: 6px;">Join our Slack community</h3><p style="color: rgba(255,255,255,0.8);">Connect with other women in tech.</p></div>
+            </div>
+            <a href="https://join.slack.com/t/empowerher-r5p7907/shared_invite/zt-3w5ivq39c-aHN_rrApfPnFu7dFTdqEdg" class="btn" style="background: white; color: #4A154B;">Join on Slack</a>
+        </div>
+
+        <!-- Volunteering Form/contact  -->
+        <div class="contact-wrapper">
+            <div class="contact-card" style="grid-column: 1 / -1; max-width: 800px; margin: 0 auto;">
+                <div class="contact-card-title"><i class="fas fa-hands-helping" style="color: #9575CD;"></i> Volunteer & Partner Application</div>
+                <div class="contact-card-sub">Join our mission to empower women in tech. Tell us about yourself or your organization.</div>
+                
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="fullname">Full name *</label>
+                        <input type="text" id="fullname" name="fullname" required placeholder="e.g. Thandiwe Mbeki">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address *</label>
+                        <input type="email" id="email" name="email" required placeholder="you@example.org">
+                    </div>
+                    <div class="form-group">
+                        <label for="org">Organization / Affiliation (if any)</label>
+                        <input type="text" id="org" name="org" placeholder="e.g. Women Who Code, TUT, NGO name">
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">I want to join as: *</label>
+                        <select id="interest" name="interest" required>
+                            <option value="">-- Select an option --</option>
+                            <option value="volunteer">Volunteer </option>
+                            <option value="ngo-partner">NGO / NPO partnership</option>
+                            <option value="member">Community member / Learner</option>
+                            <option value="corporate">Corporate sponsor / partner</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Why do you want to join EmpowerHer? *</label>
+                        <textarea id="message" name="message" required placeholder="Tell us about your passion, skills, or how you'd like to contribute..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label style="display: flex; align-items: center; gap: 10px;">
+                            <input type="checkbox" name="newsletter" style="width: 18px; height: 18px;"> 
+                            I agree to receive updates from EmpowerHer.
+                        </label>
+                    </div>
+                    <div class="submit-btn">
+                        <button type="submit" class="btn" style="width: 100%;">Submit Application →</button>
+                    </div>
+                    <p style="margin-top: 16px; font-size: 0.85rem; color: #777; text-align: center;">We'll get back to you within 3 business days.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand"><img src="images/Logo.png" class="footer-logo"><p>Empowering women in tech.</p><div class="footer-socials"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+            <div class="footer-links"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="programs.html">Programs</a></li><li><a href="blogs.html">Blogs</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            <div class="footer-links"><h4>Contact</h4><ul><li><a href="mailto:hello@empowerher.co.za">hello@empowerher.co.za</a></li><li><a href="#">Slack community</a></li></ul></div>
+        </div>
+        <div class="footer-bottom"><p>© 2025 EmpowerHer. All rights reserved. | Built with love for women in tech.</p></div>
+    </footer>
+    <script>document.querySelector('.hamburger').addEventListener('click', function() { document.querySelector('.nav-menu').classList.toggle('active'); });</script>
+</body>
+</html>

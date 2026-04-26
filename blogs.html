@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs · EmpowerHer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-nav">
+        <div class="logo"><img src="images/Logo.png" alt="EmpowerHer Logo"></div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="blogs.html" class="active">Blogs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="hamburger"><span></span><span></span><span></span></button>
+    </div>
+
+ <!-- Blogs Section -->
+   <section id="blogs" class="page-section">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Resources and Insights</h2>
+            <p>Stories, interviews, and resources empowering women in technology.</p>
+        </div>
+ 
+        <div class="search-bar" data-aos="fade-up">
+            <input type="text" id="blogSearch" placeholder="Search articles..." aria-label="Search blog articles">
+        </div>
+ 
+        <div class="blog-grid">
+            <div class="card" data-aos="fade-up" data-aos-delay="0">
+                <img src="images/women in tech.jpg" loading="lazy" alt="Women in tech leadership">
+                <div class="tag">Inspirational</div>
+                <h3>Women in Tech Who Made Strategic Leadership Shifts in 2025</h3>
+                <p>How women are shaping the future of technology through innovation and resilience.</p>
+                <div class="author">
+                    <span>Grace Pelo-Sithole</span> | <a href="https://cio-sa.co.za/articles/women-in-tech-who-made-strategic-leadership-shifts-in-2025/" target="_blank" rel="noopener noreferrer" style="color:#9575CD;">Read Article →</a>
+                </div>
+            </div>
+ 
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <img src="images/mentorship.jpg" loading="lazy" alt="Women breaking barriers in tech">
+                <div class="tag">Career Stories</div>
+                <h3>Breaking Barriers: FoICT Marketer Empowers Women in Tech</h3>
+                <p>Real stories and experiences from women navigating careers in the tech industry.</p>
+                <div class="author">
+                    <span>Kgothatso Monono</span> | <a href="https://www.tut.ac.za/newsroom/all-news/2025/breaking-barriers---foict-marketer-empowers-women-in-tech-through-pioneering-programme.php" target="_blank" rel="noopener noreferrer" style="color:#9575CD;">Read Article →</a>
+                </div>
+            </div>
+ 
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/notes.jpg" loading="lazy" alt="Tips for getting into tech">
+                <div class="tag">Community</div>
+                <h3>Eight Tips for Getting Into Tech</h3>
+                <p>Tips, guides and resources for women entering and growing their careers in tech.</p>
+                <div class="author">
+                    <span>SheCanCode</span> | <a href="https://shecancode.io/eight-tips-for-getting-into-tech/" target="_blank" rel="noopener noreferrer" style="color:#9575CD;">Read Blog →</a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <div class="footer-inner"><div class="footer-brand"><img src="images/Logo.png" class="footer-logo"><p>Empowering women in tech.</p></div><div class="footer-links"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="programs.html">Programs</a></li><li><a href="blogs.html">Blogs</a></li><li><a href="contact.html">Contact</a></li></ul></div></div>
+      <div class="footer-bottom"><p>© 2025 EmpowerHer. All rights reserved. | Built with love for women in tech.</p></div>
+    
+    </footer>
+    <script>document.querySelector('.hamburger').addEventListener('click', function() { document.querySelector('.nav-menu').classList.toggle('active'); });</script>
+</body>
+</html>
