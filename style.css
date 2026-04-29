@@ -1261,3 +1261,167 @@ footer {
                 text-align: left;
             }
         }
+        /* ── Slack Banner ── */
+.slack-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #4A154B;
+    padding: 24px 32px;
+    border-radius: 24px;
+    margin-bottom: 48px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+}
+
+.slack-banner-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.slack-icon i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.slack-banner h3 {
+    color: white;
+    margin-bottom: 6px;
+}
+
+.slack-banner p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.slack-btn {
+    background: white;
+    color: #4A154B;
+    white-space: nowrap;
+}
+
+.slack-btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+    color: #4A154B;
+}
+
+/* ── Form Card ── */
+.form-card {
+    grid-column: 1 / -1;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ── Prevent horizontal overflow on contact page ── */
+#contact {
+    overflow-x: hidden;
+}
+
+.contact-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 1rem;
+}
+
+.contact-card {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+}
+
+.contact-card-title i {
+    color: #9575CD;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.form-note {
+    margin-top: 16px;
+    font-size: 0.85rem;
+    color: #777;
+    text-align: center;
+}
+
+/* ── Mobile Responsiveness ── */
+@media (max-width: 768px) {
+    .slack-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .slack-banner-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .slack-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-card {
+        padding: 1.2rem;
+    }
+
+    .contact-card-title {
+        font-size: 1rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 1rem; /* prevents iOS zoom on focus */
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+
+    .submit-btn .btn {
+        font-size: 1rem;
+        padding: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-wrapper {
+        padding: 0 0.5rem;
+    }
+
+    .contact-card {
+        border-radius: 10px;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+}
