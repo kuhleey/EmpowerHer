@@ -3,16 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EmpowerHer - Home</title>
+
+    <!-- SEO -->
+    <title>EmpowerHer | Empowering Women in Technology</title>
+    <meta name="description" content="EmpowerHer helps women explore careers in technology through courses, mentorship, events, and career guidance.">
+    <meta name="keywords" content="women in tech, coding courses, tech careers, software development, cybersecurity, AI, data science, South Africa">
+    <meta name="author" content="EmpowerHer">
+    <!-- Search Engine Indexing -->
+    <meta name="robots" content="index, follow">
+    <!--better  Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
+
 <body>
     <div class="top-nav" id="topNav">
-       <div class="logo">
-    <div class="logo"><img src="images/Logo.png" alt="EmpowerHer Logo"></div>
-</div>
+       <div class="logo"><img src="images/Logo.png" alt="EmpowerHer Logo"></div>
         <ul class="nav-menu" id="navMenu">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -28,7 +42,11 @@
     <section id="home" class="page-section">
         <div class="banner">
             <div class="banner-image">
-                <img src="images/freepik__background__29464.png" loading="lazy" alt="Women in Tech Illustration">
+               <img src="images/freepik__background__29464.png"
+     alt="Women in Tech Illustration"
+     width="700"
+     height="500"
+     fetchpriority="high">
             </div>
             <div class="banner-text">
                 <h1>Unlock <span>potential</span>, Drive innovation.</h1>
@@ -184,17 +202,18 @@
             </div>
  
             <div class="event-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="event-date">April 27–30, 2026 | Cape Town</div>
-                <h4 class="event-title">Women in Tech Global Summit</h4>
-                <p class="event-description">This annual meeting brings together leaders from government, business, and civil society to examine the status of women in tech and set priorities for the year ahead.</p>
-                <a href="https://womenintech-summit.com/" target="_blank" rel="noopener noreferrer" class="btn">Register Now</a>
+                <div class="event-date">October 28–29, 2026 | The Maslow Hotel, Sandton, Johannesburg</div>
+                <h4 class="event-title">The Big Data and Business Analytics Conference 2026</h4>
+                <p class="event-description">The Big Data and Business Analytics Conference 2026 is a premier African summit focused on leveraging data for organizational growth. Taking place at The Maslow Hotel in Sandton, it empowers leaders with strategic insights into data innovation, governance, and sustainable analytics to drive digital transformation.</p>
+                <a href="https://kiweb.co.za/big-data-business-analytics/" target="_blank" rel="noopener noreferrer" class="btn">Register Now</a>
             </div>
  
             <div class="event-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="event-date">April 24, 2026 | Newcastle, KwaZulu-Natal</div>
-                <h4 class="event-title">Build with AI 2026</h4>
-                <p class="event-description">A community-driven Google Developer Group event focused on building with AI tools. Great for beginners curious about how AI works in real-world applications.</p>
-                <a href="https://gdg.community.dev/events/details/google-gdg-limpopo-presents-build-with-ai-2026-2026-04-24/" target="_blank" rel="noopener noreferrer" class="btn">Register Now</a>
+                <div class="event-date">June 03-04 2026 | Newcastle, KwaZulu-Natal</div>
+                <h4 class="event-title">ITWeb Security Summit 2026</h4>
+                <p class="event-description">The ITWeb Security Summit is a premier annual gathering for IT, security, and business decision-makers in South Africa, taking place at the Sandton Convention Centre in Johannesburg. As the must-attend event for CISOs and security professionals, this summit focuses on the latest developments in cybersecurity threats and countermeasures. With an expected visitor count of 400, the summit provides a unique platform for networking and sharing insights among professionals in the information security industry.
+</p>
+                <a href="https://10times.com/itweb-security-summit" target="_blank" rel="noopener noreferrer" class="btn">Register Now</a>
             </div>
         </div>
     </section>
@@ -208,7 +227,9 @@
         </div>
         <div class="footer-bottom"><p>© 2025 EmpowerHer. All rights reserved. | Built with love for women in tech.</p></div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
+        AOS.init();
         document.getElementById('hamburger').addEventListener('click', function() {
             document.getElementById('navMenu').classList.toggle('active');
         });
