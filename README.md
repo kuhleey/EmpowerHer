@@ -29,3 +29,11 @@ JavaScript
 Netlify
 VScode 
 Github 
+
+Reference list
+
+W3Schools (n.d.) HTML Tutorial. Available at: https://www.w3schools.com/html/ (Accessed: 18 June 2026).
+
+W3Schools (n.d.) CSS Tutorial. Available at: https://www.w3schools.com/css/ (Accessed: 18 June 2026).
+
+W3Schools (n.d.) JavaScript Tutorial. Available at: https://www.w3schools.com/js/ (Accessed: 18 June 2026).
