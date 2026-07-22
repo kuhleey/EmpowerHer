@@ -56,4 +56,32 @@ document.addEventListener('DOMContentLoaded', function () {
             contactForm.innerHTML = '<div class="form-success"><h3>Thanks for reaching out!</h3><p>Your application has been received. We will contact you soon.</p></div>';
         });
     }
+
+    // Course Filter Functionality
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const programCards = document.querySelectorAll('.program-card');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const filterValue = this.getAttribute('data-filter');
+
+            // Update active button
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+
+            // Filter cards
+            programCards.forEach(card => {
+                if (filterValue === 'all') {
+                    card.classList.remove('hidden');
+                } else {
+                    const cardLevel = card.getAttribute('data-level');
+                    if (cardLevel === filterValue) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    });
 });

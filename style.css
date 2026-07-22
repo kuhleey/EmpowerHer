@@ -354,6 +354,41 @@
     text-align: center;
 }
 
+/* Course Filter Styles */
+.courses-filter {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: 2px solid #C8A2F5;
+    background-color: white;
+    color: #9B6DD6;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #C8A2F5;
+    color: white;
+}
+
+.filter-btn.active {
+    background-color: #9B6DD6;
+    color: white;
+    border-color: #9B6DD6;
+}
+.program-card.hidden {
+    display: none;
+}
+
 .programs-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
