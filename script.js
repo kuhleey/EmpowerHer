@@ -33,7 +33,22 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+document.addEventListener('DOMContentLoaded', () => {
+  const lazyBgs = document.querySelectorAll('.lazy-bg');
 
+  const bgObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        el.style.backgroundImage = `url('${el.dataset.bg}')`;
+        el.classList.remove('lazy-bg');
+        observer.unobserve(el);
+      }
+    });
+  }, { rootMargin: '150px' }); // starts loading 150px before entering viewport
+
+  lazyBgs.forEach(el => bgObserver.observe(el));
+});
     if (window.AOS && typeof AOS.init === 'function') {
         AOS.init({ duration: 800, once: true });
     }
