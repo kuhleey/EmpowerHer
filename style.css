@@ -56,7 +56,9 @@
             list-style: none;
             gap: 25px;
         }
-        
+        .lazy-bg {
+  background-color: #f0f0f0; /* or a subtle skeleton gradient */
+}
         .nav-menu li a {
             color: var(--dark);
             text-decoration: none;

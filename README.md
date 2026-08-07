@@ -1,7 +1,7 @@
-EmpowerHer ZA
+HerSphereZA
 
-EmpowerHer ZA is a platform dedicated to empowering women in South Africa through education, mentorship, opportunities, and community-driven support.
-Full website link :https://empowerherza.netlify.app/ 
+HerSphereZA is a platform dedicated to empowering women in South Africa through education, mentorship, opportunities, and community-driven support.
+Full website link:https://hersphereza.netlify.app/
 
  About the Project
 
